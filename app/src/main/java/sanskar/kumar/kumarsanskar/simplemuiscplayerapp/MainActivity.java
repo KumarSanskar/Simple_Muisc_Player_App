@@ -17,5 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         playButton = findViewById(R.id.button);
         pauseButton = findViewById(R.id.button3);
+        mediaPlayer = MediaPlayer.create(this, R.raw.turn);
     }
 }
