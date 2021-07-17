@@ -12,21 +12,20 @@ public class MainActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer;
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         playButton = findViewById(R.id.button);
         pauseButton = findViewById(R.id.button3);
         mediaPlayer = MediaPlayer.create(this, R.raw.turn);
-
+        //to play the music file
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mediaPlayer.start();
             }
         });
-
+        // to pause the music file playing right now
         pauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
